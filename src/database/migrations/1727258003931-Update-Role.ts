@@ -6,7 +6,7 @@ export class UpdateRole1727258003931 implements MigrationInterface {
         await queryRunner.addColumn("users",new TableColumn({
             name: 'role',
             type: 'enum',
-            enum: ['ADMIN', 'USER'],
+            enum: ['ADMIN', 'USER','ART'],
             default: `'USER'`,
         }))
     }
